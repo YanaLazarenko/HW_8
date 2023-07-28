@@ -42,7 +42,10 @@ def get_birthdays_per_week(employes: list) -> None:
                 continue
         else:
             continue
-    return result
+    if result:
+        return result
+    else:
+        return f'No birthdays'
 
 
 if __name__ =='__main__':
